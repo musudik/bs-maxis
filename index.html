@@ -35,12 +35,18 @@
             </a>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about">Über Uns</a></li>
-                <li><a href="#gallery">Galerie</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-                <li><a href="tel:08922847455" class="nav-cta">Anrufen</a></li>
+                <li><a href="#about" data-i18n="nav.about">Über Uns</a></li>
+                <li><a href="#gallery" data-i18n="nav.gallery">Galerie</a></li>
+                <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+                <li><a href="tel:08922847455" class="nav-cta" data-i18n="nav.call">Anrufen</a></li>
             </ul>
+
+            <!-- Language Toggle -->
+            <div class="lang-toggle" id="langToggle">
+                <button class="lang-btn active" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
 
             <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
                 <span></span>
@@ -85,13 +91,13 @@
         <div class="hero-content">
             <h1 class="hero-title">Maxis Barber Shop</h1>
             <p class="hero-subtitle">Your Style, Our Passion</p>
-            <p class="hero-tagline">Premium Barbershop in München-Pasing</p>
+            <p class="hero-tagline" data-i18n="hero.tagline">Premium Barbershop in München-Pasing</p>
 
             <!-- Google Reviews Link -->
             <a href="https://www.google.com/maps/place/Maxis+Barber+Shop/@48.1422,11.4361,17z/data=!4m8!3m7!1s0x0:0x0!8m2!3d48.1422!4d11.4361!9m1!1b1!16s"
                 target="_blank" rel="noopener noreferrer" class="hero-rating">
                 <span class="stars">★★★★☆</span>
-                <span>4.0/5 • 270 Bewertungen auf Google</span>
+                <span data-i18n="hero.reviews">4.0/5 • 270 Bewertungen auf Google</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -107,13 +113,13 @@
                         d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
                     </path>
                 </svg>
-                Jetzt Anrufen
+                <span data-i18n="hero.callNow">Jetzt Anrufen</span>
             </a>
         </div>
 
         <div class="hero-scroll">
             <a href="#about">
-                <span>Mehr Entdecken</span>
+                <span data-i18n="hero.discover">Mehr Entdecken</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 5v14M19 12l-7 7-7-7" />
@@ -126,17 +132,19 @@
     <section class="about" id="about">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-label">Willkommen</span>
-                <h2 class="section-title">Über Maxis Barber Shop</h2>
+                <span class="section-label" data-i18n="about.label">Willkommen</span>
+                <h2 class="section-title" data-i18n="about.title">Über Maxis Barber Shop</h2>
                 <div class="section-divider"></div>
             </div>
 
             <div class="about-content">
                 <div class="about-text reveal-left">
-                    <h3>Premium Barbershop in München</h3>
-                    <p>Bei Maxis Barber Shop stehst DU im Mittelpunkt! Wir sind Ihr vertrauenswürdiger Partner für
+                    <h3 data-i18n="about.subtitle">Premium Barbershop in München</h3>
+                    <p data-i18n="about.text1">Bei Maxis Barber Shop stehst DU im Mittelpunkt! Wir sind Ihr
+                        vertrauenswürdiger Partner für
                         erstklassige Haarpflege und professionelle Bartpflege in München-Pasing.</p>
-                    <p>Unser erfahrenes Team verbindet traditionelles Handwerk mit modernen Trends, um Ihnen den
+                    <p data-i18n="about.text2">Unser erfahrenes Team verbindet traditionelles Handwerk mit modernen
+                        Trends, um Ihnen den
                         perfekten Look zu verleihen. Ob klassischer Haarschnitt, präziser Bartschnitt oder kreative
                         Farbgestaltung – wir erfüllen Ihre Wünsche mit Leidenschaft und Expertise.</p>
 
@@ -148,7 +156,7 @@
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                                 <polyline points="22 4 12 14.01 9 11.01" />
                             </svg>
-                            <span>Professionelles Team</span>
+                            <span data-i18n="about.feature1">Professionelles Team</span>
                         </div>
                         <div class="about-feature">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -157,7 +165,7 @@
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                                 <polyline points="22 4 12 14.01 9 11.01" />
                             </svg>
-                            <span>Premium Produkte</span>
+                            <span data-i18n="about.feature2">Premium Produkte</span>
                         </div>
                         <div class="about-feature">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -166,7 +174,7 @@
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                                 <polyline points="22 4 12 14.01 9 11.01" />
                             </svg>
-                            <span>Gemütliche Atmosphäre</span>
+                            <span data-i18n="about.feature3">Gemütliche Atmosphäre</span>
                         </div>
                         <div class="about-feature">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -175,7 +183,7 @@
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                                 <polyline points="22 4 12 14.01 9 11.01" />
                             </svg>
-                            <span>270+ Zufriedene Kunden</span>
+                            <span data-i18n="about.feature4">270+ Zufriedene Kunden</span>
                         </div>
                     </div>
                 </div>
@@ -191,8 +199,8 @@
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-label">Unsere Arbeit</span>
-                <h2 class="section-title">Galerie</h2>
+                <span class="section-label" data-i18n="gallery.label">Unsere Arbeit</span>
+                <h2 class="section-title" data-i18n="gallery.title">Galerie</h2>
                 <div class="section-divider"></div>
             </div>
 
@@ -233,8 +241,8 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-label">Unsere Leistungen</span>
-                <h2 class="section-title">Services</h2>
+                <span class="section-label" data-i18n="services.label">Unsere Leistungen</span>
+                <h2 class="section-title" data-i18n="services.title">Services</h2>
                 <div class="section-divider"></div>
             </div>
 
@@ -251,28 +259,33 @@
                             <line x1="8.12" y1="8.12" x2="12" y2="12" />
                         </svg>
                     </div>
-                    <h3>Hair Services</h3>
+                    <h3 data-i18n="services.hair.title">Hair Services</h3>
                 </div>
                 <div class="service-list">
                     <div class="service-item">
-                        <span class="service-name">Haircut</span>
-                        <span class="service-desc">Standard haircuts using clippers and scissors</span>
+                        <span class="service-name" data-i18n="services.hair.haircut">Haircut</span>
+                        <span class="service-desc" data-i18n="services.hair.haircutDesc">Standard haircuts using
+                            clippers and scissors</span>
                     </div>
                     <div class="service-item">
-                        <span class="service-name">Shampoo & Style</span>
-                        <span class="service-desc">Hair washing, cutting, and styling services</span>
+                        <span class="service-name" data-i18n="services.hair.shampoo">Shampoo & Style</span>
+                        <span class="service-desc" data-i18n="services.hair.shampooDesc">Hair washing, cutting, and
+                            styling services</span>
                     </div>
                     <div class="service-item">
-                        <span class="service-name">One Grade All-over</span>
-                        <span class="service-desc">A quick, single-length clipper cut</span>
+                        <span class="service-name" data-i18n="services.hair.oneGrade">One Grade All-over</span>
+                        <span class="service-desc" data-i18n="services.hair.oneGradeDesc">A quick, single-length clipper
+                            cut</span>
                     </div>
                     <div class="service-item">
-                        <span class="service-name">Straight Razor Head Shave</span>
-                        <span class="service-desc">Traditional razor shave with warm towel treatments</span>
+                        <span class="service-name" data-i18n="services.hair.headShave">Straight Razor Head Shave</span>
+                        <span class="service-desc" data-i18n="services.hair.headShaveDesc">Traditional razor shave with
+                            warm towel treatments</span>
                     </div>
                     <div class="service-item">
-                        <span class="service-name">Coloring / Dyeing</span>
-                        <span class="service-desc">Professional hair coloring services</span>
+                        <span class="service-name" data-i18n="services.hair.coloring">Coloring / Dyeing</span>
+                        <span class="service-desc" data-i18n="services.hair.coloringDesc">Professional hair coloring
+                            services</span>
                     </div>
                 </div>
             </div>
@@ -290,30 +303,34 @@
                             <circle cx="15" cy="9" r="1" />
                         </svg>
                     </div>
-                    <h3>Beard & Shaving Services</h3>
+                    <h3 data-i18n="services.beard.title">Beard & Shaving Services</h3>
                 </div>
                 <div class="service-list">
                     <div class="service-item">
-                        <span class="service-name">Traditional Classic Shave</span>
-                        <span class="service-desc">Luxurious experience with hot towels, double shave, and icy towel
-                            treatment</span>
+                        <span class="service-name" data-i18n="services.beard.classicShave">Traditional Classic
+                            Shave</span>
+                        <span class="service-desc" data-i18n="services.beard.classicShaveDesc">Luxurious experience with
+                            hot towels, double shave, and icy towel treatment</span>
                     </div>
                     <div class="service-item">
-                        <span class="service-name">Full Beard Reshaping</span>
-                        <span class="service-desc">Detailed beard shaping with scissors, clippers, razor, oils and
-                            balms</span>
+                        <span class="service-name" data-i18n="services.beard.reshaping">Full Beard Reshaping</span>
+                        <span class="service-desc" data-i18n="services.beard.reshapingDesc">Detailed beard shaping with
+                            scissors, clippers, razor, oils and balms</span>
                     </div>
                     <div class="service-item">
-                        <span class="service-name">Quick Beard Trim</span>
-                        <span class="service-desc">Simple, machine-based beard shortening and shaping</span>
+                        <span class="service-name" data-i18n="services.beard.quickTrim">Quick Beard Trim</span>
+                        <span class="service-desc" data-i18n="services.beard.quickTrimDesc">Simple, machine-based beard
+                            shortening and shaping</span>
                     </div>
                     <div class="service-item">
-                        <span class="service-name">Moustache Trim & Styling</span>
-                        <span class="service-desc">Specialized services for moustache grooming</span>
+                        <span class="service-name" data-i18n="services.beard.moustache">Moustache Trim & Styling</span>
+                        <span class="service-desc" data-i18n="services.beard.moustacheDesc">Specialized services for
+                            moustache grooming</span>
                     </div>
                     <div class="service-item">
-                        <span class="service-name">Beard Coloring</span>
-                        <span class="service-desc">Professional beard coloring for a fresh look</span>
+                        <span class="service-name" data-i18n="services.beard.coloring">Beard Coloring</span>
+                        <span class="service-desc" data-i18n="services.beard.coloringDesc">Professional beard coloring
+                            for a fresh look</span>
                     </div>
                 </div>
             </div>
@@ -327,21 +344,23 @@
                             <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
                         </svg>
                     </div>
-                    <h3>Additional Grooming & Experience</h3>
+                    <h3 data-i18n="services.extra.title">Additional Grooming & Experience</h3>
                 </div>
                 <div class="service-list">
                     <div class="service-item">
-                        <span class="service-name">Facial Treatments</span>
-                        <span class="service-desc">Face masks and facial treatments as part of packages</span>
+                        <span class="service-name" data-i18n="services.extra.facial">Facial Treatments</span>
+                        <span class="service-desc" data-i18n="services.extra.facialDesc">Face masks and facial
+                            treatments as part of packages</span>
                     </div>
                     <div class="service-item">
-                        <span class="service-name">Complimentary Beverages</span>
-                        <span class="service-desc">Free coffee, beer, or other drinks during your visit</span>
+                        <span class="service-name" data-i18n="services.extra.beverages">Complimentary Beverages</span>
+                        <span class="service-desc" data-i18n="services.extra.beveragesDesc">Free coffee, beer, or other
+                            drinks during your visit</span>
                     </div>
                     <div class="service-item">
-                        <span class="service-name">Premium Products</span>
-                        <span class="service-desc">High-quality grooming products: beard balms, shaving kits, and
-                            more</span>
+                        <span class="service-name" data-i18n="services.extra.products">Premium Products</span>
+                        <span class="service-desc" data-i18n="services.extra.productsDesc">High-quality grooming
+                            products: beard balms, shaving kits, and more</span>
                     </div>
                 </div>
             </div>
@@ -352,8 +371,8 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-label">Besuchen Sie Uns</span>
-                <h2 class="section-title">Kontakt</h2>
+                <span class="section-label" data-i18n="contact.label">Besuchen Sie Uns</span>
+                <h2 class="section-title" data-i18n="contact.title">Kontakt</h2>
                 <div class="section-divider"></div>
             </div>
 
@@ -370,7 +389,7 @@
                             </svg>
                         </div>
                         <div class="contact-item-content">
-                            <h4>Adresse</h4>
+                            <h4 data-i18n="contact.address">Adresse</h4>
                             <p>Gleichmannstraße 2<br>81241 München</p>
                         </div>
                     </div>
@@ -386,7 +405,7 @@
                             </svg>
                         </div>
                         <div class="contact-item-content">
-                            <h4>Telefon</h4>
+                            <h4 data-i18n="contact.phone">Telefon</h4>
                             <a href="tel:08922847455">089 22847455</a>
                         </div>
                     </div>
@@ -400,12 +419,14 @@
                                 <circle cx="12" cy="12" r="10" />
                                 <polyline points="12 6 12 12 16 14" />
                             </svg>
-                            Öffnungszeiten
+                            <span data-i18n="contact.hours">Öffnungszeiten</span>
                         </h4>
                         <ul>
-                            <li><span>Montag - Freitag</span><span>09:00 - 19:00</span></li>
-                            <li><span>Samstag</span><span>09:00 - 17:00</span></li>
-                            <li><span>Sonntag</span><span>Geschlossen</span></li>
+                            <li><span data-i18n="contact.weekdays">Montag - Freitag</span><span>09:00 - 19:00</span>
+                            </li>
+                            <li><span data-i18n="contact.saturday">Samstag</span><span>09:00 - 17:00</span></li>
+                            <li><span data-i18n="contact.sunday">Sonntag</span><span
+                                    data-i18n="contact.closed">Geschlossen</span></li>
                         </ul>
                     </div>
                 </div>
@@ -484,11 +505,12 @@
             </div>
 
             <div class="footer-bottom">
-                <p class="footer-copyright">© 2024 Maxis Barber Shop. Alle Rechte vorbehalten.</p>
+                <p class="footer-copyright" data-i18n="footer.copyright">© 2025 Maxis Barber Shop. Alle Rechte
+                    vorbehalten.</p>
                 <div class="footer-links">
                     <a href="impressum.html">Impressum</a>
                     <span class="footer-divider">|</span>
-                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a>
                 </div>
             </div>
         </div>
@@ -496,6 +518,199 @@
 
     <!-- JavaScript -->
     <script>
+        // ===== TRANSLATIONS =====
+        const translations = {
+            de: {
+                // Navigation
+                'nav.about': 'Über Uns',
+                'nav.gallery': 'Galerie',
+                'nav.services': 'Services',
+                'nav.contact': 'Kontakt',
+                'nav.call': 'Anrufen',
+
+                // Hero
+                'hero.tagline': 'Premium Barbershop in München-Pasing',
+                'hero.reviews': '4.0/5 • 270 Bewertungen auf Google',
+                'hero.callNow': 'Jetzt Anrufen',
+                'hero.discover': 'Mehr Entdecken',
+
+                // About
+                'about.label': 'Willkommen',
+                'about.title': 'Über Maxis Barber Shop',
+                'about.subtitle': 'Premium Barbershop in München',
+                'about.text1': 'Bei Maxis Barber Shop stehst DU im Mittelpunkt! Wir sind Ihr vertrauenswürdiger Partner für erstklassige Haarpflege und professionelle Bartpflege in München-Pasing.',
+                'about.text2': 'Unser erfahrenes Team verbindet traditionelles Handwerk mit modernen Trends, um Ihnen den perfekten Look zu verleihen. Ob klassischer Haarschnitt, präziser Bartschnitt oder kreative Farbgestaltung – wir erfüllen Ihre Wünsche mit Leidenschaft und Expertise.',
+                'about.feature1': 'Professionelles Team',
+                'about.feature2': 'Premium Produkte',
+                'about.feature3': 'Gemütliche Atmosphäre',
+                'about.feature4': '270+ Zufriedene Kunden',
+
+                // Gallery
+                'gallery.label': 'Unsere Arbeit',
+                'gallery.title': 'Galerie',
+
+                // Services
+                'services.label': 'Unsere Leistungen',
+                'services.title': 'Services',
+                'services.hair.title': 'Haarservices',
+                'services.hair.haircut': 'Haarschnitt',
+                'services.hair.haircutDesc': 'Standard-Haarschnitte mit Schere und Maschine',
+                'services.hair.shampoo': 'Waschen & Stylen',
+                'services.hair.shampooDesc': 'Haarwäsche, Schnitt und Styling',
+                'services.hair.oneGrade': 'Maschinenschnitt',
+                'services.hair.oneGradeDesc': 'Schneller, einheitlicher Maschinenschnitt',
+                'services.hair.headShave': 'Kopfrasur mit Rasiermesser',
+                'services.hair.headShaveDesc': 'Traditionelle Rasur mit warmen Tüchern',
+                'services.hair.coloring': 'Färben / Tönen',
+                'services.hair.coloringDesc': 'Professionelle Haarfärbung',
+                'services.beard.title': 'Bart & Rasur',
+                'services.beard.classicShave': 'Klassische Nassrasur',
+                'services.beard.classicShaveDesc': 'Luxuriöses Erlebnis mit heißen Tüchern und Doppelrasur',
+                'services.beard.reshaping': 'Bart-Komplettservice',
+                'services.beard.reshapingDesc': 'Detaillierte Bartpflege mit Schere, Maschine, Rasiermesser und Ölen',
+                'services.beard.quickTrim': 'Schneller Barttrimm',
+                'services.beard.quickTrimDesc': 'Einfaches Kürzen und Formen mit der Maschine',
+                'services.beard.moustache': 'Schnurrbart Trimmen & Styling',
+                'services.beard.moustacheDesc': 'Spezialisierte Schnurrbartpflege',
+                'services.beard.coloring': 'Bartfärbung',
+                'services.beard.coloringDesc': 'Professionelle Bartfärbung für einen frischen Look',
+                'services.extra.title': 'Zusätzliche Services & Erlebnis',
+                'services.extra.facial': 'Gesichtsbehandlungen',
+                'services.extra.facialDesc': 'Gesichtsmasken und Behandlungen im Paket',
+                'services.extra.beverages': 'Kostenlose Getränke',
+                'services.extra.beveragesDesc': 'Gratis Kaffee, Bier oder andere Getränke während Ihres Besuchs',
+                'services.extra.products': 'Premium Produkte',
+                'services.extra.productsDesc': 'Hochwertige Pflegeprodukte: Bartbalsam, Rasiersets und mehr',
+
+                // Contact
+                'contact.label': 'Besuchen Sie Uns',
+                'contact.title': 'Kontakt',
+                'contact.address': 'Adresse',
+                'contact.phone': 'Telefon',
+                'contact.hours': 'Öffnungszeiten',
+                'contact.weekdays': 'Montag - Freitag',
+                'contact.saturday': 'Samstag',
+                'contact.sunday': 'Sonntag',
+                'contact.closed': 'Geschlossen',
+
+                // Footer
+                'footer.copyright': '© 2025 Maxis Barber Shop. Alle Rechte vorbehalten.',
+                'footer.privacy': 'Datenschutz'
+            },
+            en: {
+                // Navigation
+                'nav.about': 'About Us',
+                'nav.gallery': 'Gallery',
+                'nav.services': 'Services',
+                'nav.contact': 'Contact',
+                'nav.call': 'Call Now',
+
+                // Hero
+                'hero.tagline': 'Premium Barbershop in Munich-Pasing',
+                'hero.reviews': '4.0/5 • 270 Reviews on Google',
+                'hero.callNow': 'Call Now',
+                'hero.discover': 'Discover More',
+
+                // About
+                'about.label': 'Welcome',
+                'about.title': 'About Maxis Barber Shop',
+                'about.subtitle': 'Premium Barbershop in Munich',
+                'about.text1': 'At Maxis Barber Shop, YOU are our priority! We are your trusted partner for first-class hair care and professional beard grooming in Munich-Pasing.',
+                'about.text2': 'Our experienced team combines traditional craftsmanship with modern trends to give you the perfect look. Whether classic haircut, precise beard trim, or creative coloring – we fulfill your wishes with passion and expertise.',
+                'about.feature1': 'Professional Team',
+                'about.feature2': 'Premium Products',
+                'about.feature3': 'Cozy Atmosphere',
+                'about.feature4': '270+ Satisfied Customers',
+
+                // Gallery
+                'gallery.label': 'Our Work',
+                'gallery.title': 'Gallery',
+
+                // Services
+                'services.label': 'Our Services',
+                'services.title': 'Services',
+                'services.hair.title': 'Hair Services',
+                'services.hair.haircut': 'Haircut',
+                'services.hair.haircutDesc': 'Standard haircuts using clippers and scissors',
+                'services.hair.shampoo': 'Shampoo & Style',
+                'services.hair.shampooDesc': 'Hair washing, cutting, and styling services',
+                'services.hair.oneGrade': 'One Grade All-over',
+                'services.hair.oneGradeDesc': 'A quick, single-length clipper cut',
+                'services.hair.headShave': 'Straight Razor Head Shave',
+                'services.hair.headShaveDesc': 'Traditional razor shave with warm towel treatments',
+                'services.hair.coloring': 'Coloring / Dyeing',
+                'services.hair.coloringDesc': 'Professional hair coloring services',
+                'services.beard.title': 'Beard & Shaving Services',
+                'services.beard.classicShave': 'Traditional Classic Shave',
+                'services.beard.classicShaveDesc': 'Luxurious experience with hot towels, double shave, and icy towel treatment',
+                'services.beard.reshaping': 'Full Beard Reshaping',
+                'services.beard.reshapingDesc': 'Detailed beard shaping with scissors, clippers, razor, oils and balms',
+                'services.beard.quickTrim': 'Quick Beard Trim',
+                'services.beard.quickTrimDesc': 'Simple, machine-based beard shortening and shaping',
+                'services.beard.moustache': 'Moustache Trim & Styling',
+                'services.beard.moustacheDesc': 'Specialized services for moustache grooming',
+                'services.beard.coloring': 'Beard Coloring',
+                'services.beard.coloringDesc': 'Professional beard coloring for a fresh look',
+                'services.extra.title': 'Additional Grooming & Experience',
+                'services.extra.facial': 'Facial Treatments',
+                'services.extra.facialDesc': 'Face masks and facial treatments as part of packages',
+                'services.extra.beverages': 'Complimentary Beverages',
+                'services.extra.beveragesDesc': 'Free coffee, beer, or other drinks during your visit',
+                'services.extra.products': 'Premium Products',
+                'services.extra.productsDesc': 'High-quality grooming products: beard balms, shaving kits, and more',
+
+                // Contact
+                'contact.label': 'Visit Us',
+                'contact.title': 'Contact',
+                'contact.address': 'Address',
+                'contact.phone': 'Phone',
+                'contact.hours': 'Opening Hours',
+                'contact.weekdays': 'Monday - Friday',
+                'contact.saturday': 'Saturday',
+                'contact.sunday': 'Sunday',
+                'contact.closed': 'Closed',
+
+                // Footer
+                'footer.copyright': '© 2025 Maxis Barber Shop. All rights reserved.',
+                'footer.privacy': 'Privacy Policy'
+            }
+        };
+
+        // Current language (default: German)
+        let currentLang = localStorage.getItem('maxis-lang') || 'de';
+
+        // Apply translations
+        function applyTranslations(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+
+            // Save preference
+            localStorage.setItem('maxis-lang', lang);
+            currentLang = lang;
+        }
+
+        // Initialize language
+        applyTranslations(currentLang);
+
+        // Language toggle handlers
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                applyTranslations(btn.dataset.lang);
+            });
+        });
+
         // ===== HERO SLIDESHOW =====
         const slides = document.querySelectorAll('.hero-slide');
         const dots = document.querySelectorAll('.slideshow-dot');

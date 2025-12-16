@@ -78,10 +78,16 @@
                 <span class="nav-logo-text">Maxis Barber Shop</span>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#contact">Kontakt</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Startseite</a></li>
+                <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Kontakt</a></li>
             </ul>
+
+            <!-- Language Toggle -->
+            <div class="lang-toggle" id="langToggle">
+                <button class="lang-btn active" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
         </div>
     </nav>
 
@@ -94,119 +100,84 @@
                         <line x1="19" y1="12" x2="5" y2="12" />
                         <polyline points="12 19 5 12 12 5" />
                     </svg>
-                    Zurück zur Startseite
+                    <span data-i18n="legal.back">Zurück zur Startseite</span>
                 </a>
 
-                <h1>Datenschutzerklärung</h1>
+                <h1 data-i18n="privacy.title">Datenschutzerklärung</h1>
 
-                <h2>1. Datenschutz auf einen Blick</h2>
+                <h2 data-i18n="privacy.section1">1. Datenschutz auf einen Blick</h2>
 
-                <h3>Allgemeine Hinweise</h3>
-                <p>
+                <h3 data-i18n="privacy.general">Allgemeine Hinweise</h3>
+                <p data-i18n="privacy.generalText">
                     Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren
-                    personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene
-                    Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+                    personenbezogenen Daten passiert, wenn Sie diese Website besuchen.
                 </p>
 
-                <h3>Datenerfassung auf dieser Website</h3>
-                <p>
-                    <strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br>
+                <h3 data-i18n="privacy.dataCollection">Datenerfassung auf dieser Website</h3>
+                <p data-i18n="privacy.dataCollectionText">
                     Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen
                     Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
                 </p>
 
-                <h2>2. Verantwortliche Stelle</h2>
+                <h2 data-i18n="privacy.section2">2. Verantwortliche Stelle</h2>
                 <p>
                     <strong>Maxis Barber Shop</strong><br>
                     Gleichmannstraße 2<br>
                     81241 München<br>
-                    Telefon: <a href="tel:08922847455">089 22847455</a><br>
+                    <span data-i18n="privacy.phone">Telefon</span>: <a href="tel:08922847455">089 22847455</a><br>
                     E-Mail: info@maxis-barbershop.de
                 </p>
 
-                <h2>3. Erfassung von Daten</h2>
+                <h2 data-i18n="privacy.section3">3. Erfassung von Daten</h2>
 
-                <h3>Server-Log-Dateien</h3>
-                <p>
-                    Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
-                    Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+                <h3 data-i18n="privacy.serverLogs">Server-Log-Dateien</h3>
+                <p data-i18n="privacy.serverLogsText">
+                    Der Provider der Seiten erhebt und speichert automatisch Informationen in Server-Log-Dateien.
                 </p>
                 <ul>
-                    <li>Browsertyp und Browserversion</li>
-                    <li>verwendetes Betriebssystem</li>
-                    <li>Referrer URL</li>
-                    <li>Hostname des zugreifenden Rechners</li>
-                    <li>Uhrzeit der Serveranfrage</li>
-                    <li>IP-Adresse</li>
+                    <li data-i18n="privacy.log1">Browsertyp und Browserversion</li>
+                    <li data-i18n="privacy.log2">verwendetes Betriebssystem</li>
+                    <li data-i18n="privacy.log3">Referrer URL</li>
+                    <li data-i18n="privacy.log4">Hostname des zugreifenden Rechners</li>
+                    <li data-i18n="privacy.log5">Uhrzeit der Serveranfrage</li>
+                    <li data-i18n="privacy.log6">IP-Adresse</li>
                 </ul>
-                <p>
-                    Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
-                </p>
 
-                <h2>4. Cookies</h2>
-                <p>
+                <h2 data-i18n="privacy.section4">4. Cookies</h2>
+                <p data-i18n="privacy.cookiesText">
                     Diese Website verwendet keine Cookies zur Nachverfolgung oder Analyse des Nutzerverhaltens.
                 </p>
 
-                <h2>5. Google Maps</h2>
-                <p>
-                    Diese Seite nutzt über eine API den Kartendienst Google Maps. Anbieter ist die
-                    Google Ireland Limited („Google"), Gordon House, Barrow Street, Dublin 4, Irland.
-                </p>
-                <p>
-                    Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern.
-                    Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen
-                    und dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss auf diese
-                    Datenübertragung.
-                </p>
-                <p>
-                    Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung
-                    von Google: <a href="https://policies.google.com/privacy" target="_blank"
-                        rel="noopener">https://policies.google.com/privacy</a>
+                <h2 data-i18n="privacy.section5">5. Google Maps</h2>
+                <p data-i18n="privacy.mapsText">
+                    Diese Seite nutzt über eine API den Kartendienst Google Maps. Zur Nutzung der Funktionen
+                    ist es notwendig, Ihre IP-Adresse zu speichern.
                 </p>
 
-                <h2>6. Soziale Medien</h2>
+                <h2 data-i18n="privacy.section6">6. Soziale Medien</h2>
 
-                <h3>Facebook, Instagram, TikTok & WhatsApp</h3>
-                <p>
-                    Auf dieser Website sind Links zu unseren Social Media Profilen eingebunden
-                    (Facebook, Instagram, TikTok, WhatsApp). Wenn Sie auf diese Links klicken, werden Sie
-                    zu den jeweiligen Plattformen weitergeleitet. Dabei können die Betreiber Ihr
-                    Nutzungsverhalten erfassen.
+                <h3 data-i18n="privacy.socialMedia">Facebook, Instagram, TikTok & WhatsApp</h3>
+                <p data-i18n="privacy.socialText">
+                    Auf dieser Website sind Links zu unseren Social Media Profilen eingebunden. Wenn Sie auf
+                    diese Links klicken, werden Sie zu den jeweiligen Plattformen weitergeleitet.
                 </p>
-                <p>
-                    Weitere Informationen finden Sie in den Datenschutzerklärungen der jeweiligen Anbieter:
-                </p>
+
+                <h2 data-i18n="privacy.section7">7. Ihre Rechte</h2>
+                <p data-i18n="privacy.rightsIntro">Sie haben jederzeit das Recht:</p>
                 <ul>
-                    <li>Facebook/Meta: <a href="https://www.facebook.com/privacy/explanation" target="_blank"
-                            rel="noopener">https://www.facebook.com/privacy/explanation</a></li>
-                    <li>Instagram/Meta: <a href="https://help.instagram.com/519522125107875" target="_blank"
-                            rel="noopener">https://help.instagram.com/519522125107875</a></li>
-                    <li>TikTok: <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank"
-                            rel="noopener">https://www.tiktok.com/legal/privacy-policy</a></li>
-                    <li>WhatsApp: <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank"
-                            rel="noopener">https://www.whatsapp.com/legal/privacy-policy</a></li>
+                    <li data-i18n="privacy.right1">Auskunft über Ihre gespeicherten Daten zu erhalten</li>
+                    <li data-i18n="privacy.right2">Die Berichtigung unrichtiger Daten zu verlangen</li>
+                    <li data-i18n="privacy.right3">Die Löschung Ihrer Daten zu verlangen</li>
+                    <li data-i18n="privacy.right4">Widerspruch gegen die Verarbeitung einzulegen</li>
                 </ul>
 
-                <h2>7. Ihre Rechte</h2>
-                <p>Sie haben jederzeit das Recht:</p>
-                <ul>
-                    <li>Auskunft über Ihre bei uns gespeicherten Daten zu erhalten</li>
-                    <li>Die Berichtigung unrichtiger Daten zu verlangen</li>
-                    <li>Die Löschung Ihrer Daten zu verlangen</li>
-                    <li>Die Einschränkung der Datenverarbeitung zu verlangen</li>
-                    <li>Widerspruch gegen die Verarbeitung einzulegen</li>
-                    <li>Die Datenübertragbarkeit zu verlangen</li>
-                </ul>
-
-                <h2>8. Änderung dieser Datenschutzerklärung</h2>
-                <p>
+                <h2 data-i18n="privacy.section8">8. Änderung dieser Datenschutzerklärung</h2>
+                <p data-i18n="privacy.changesText">
                     Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den
-                    aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen
-                    umzusetzen.
+                    aktuellen rechtlichen Anforderungen entspricht.
                 </p>
 
-                <p><em>Stand: Dezember 2024</em></p>
+                <p><em data-i18n="privacy.date">Stand: Dezember 2025</em></p>
             </div>
         </div>
     </main>
@@ -259,15 +230,127 @@
             </div>
 
             <div class="footer-bottom">
-                <p class="footer-copyright">© 2024 Maxis Barber Shop. Alle Rechte vorbehalten.</p>
+                <p class="footer-copyright" data-i18n="footer.copyright">© 2025 Maxis Barber Shop. Alle Rechte
+                    vorbehalten.</p>
                 <div class="footer-links">
                     <a href="impressum.html">Impressum</a>
                     <span class="footer-divider">|</span>
-                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Translations for Datenschutz page
+        const translations = {
+            de: {
+                'nav.home': 'Startseite',
+                'nav.services': 'Services',
+                'nav.contact': 'Kontakt',
+                'legal.back': 'Zurück zur Startseite',
+                'privacy.title': 'Datenschutzerklärung',
+                'privacy.section1': '1. Datenschutz auf einen Blick',
+                'privacy.general': 'Allgemeine Hinweise',
+                'privacy.generalText': 'Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.',
+                'privacy.dataCollection': 'Datenerfassung auf dieser Website',
+                'privacy.dataCollectionText': 'Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.',
+                'privacy.section2': '2. Verantwortliche Stelle',
+                'privacy.phone': 'Telefon',
+                'privacy.section3': '3. Erfassung von Daten',
+                'privacy.serverLogs': 'Server-Log-Dateien',
+                'privacy.serverLogsText': 'Der Provider der Seiten erhebt und speichert automatisch Informationen in Server-Log-Dateien.',
+                'privacy.log1': 'Browsertyp und Browserversion',
+                'privacy.log2': 'verwendetes Betriebssystem',
+                'privacy.log3': 'Referrer URL',
+                'privacy.log4': 'Hostname des zugreifenden Rechners',
+                'privacy.log5': 'Uhrzeit der Serveranfrage',
+                'privacy.log6': 'IP-Adresse',
+                'privacy.section4': '4. Cookies',
+                'privacy.cookiesText': 'Diese Website verwendet keine Cookies zur Nachverfolgung oder Analyse des Nutzerverhaltens.',
+                'privacy.section5': '5. Google Maps',
+                'privacy.mapsText': 'Diese Seite nutzt über eine API den Kartendienst Google Maps. Zur Nutzung der Funktionen ist es notwendig, Ihre IP-Adresse zu speichern.',
+                'privacy.section6': '6. Soziale Medien',
+                'privacy.socialMedia': 'Facebook, Instagram, TikTok & WhatsApp',
+                'privacy.socialText': 'Auf dieser Website sind Links zu unseren Social Media Profilen eingebunden. Wenn Sie auf diese Links klicken, werden Sie zu den jeweiligen Plattformen weitergeleitet.',
+                'privacy.section7': '7. Ihre Rechte',
+                'privacy.rightsIntro': 'Sie haben jederzeit das Recht:',
+                'privacy.right1': 'Auskunft über Ihre gespeicherten Daten zu erhalten',
+                'privacy.right2': 'Die Berichtigung unrichtiger Daten zu verlangen',
+                'privacy.right3': 'Die Löschung Ihrer Daten zu verlangen',
+                'privacy.right4': 'Widerspruch gegen die Verarbeitung einzulegen',
+                'privacy.section8': '8. Änderung dieser Datenschutzerklärung',
+                'privacy.changesText': 'Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.',
+                'privacy.date': 'Stand: Dezember 2025',
+                'footer.copyright': '© 2025 Maxis Barber Shop. Alle Rechte vorbehalten.',
+                'footer.privacy': 'Datenschutz'
+            },
+            en: {
+                'nav.home': 'Home',
+                'nav.services': 'Services',
+                'nav.contact': 'Contact',
+                'legal.back': 'Back to Home',
+                'privacy.title': 'Privacy Policy',
+                'privacy.section1': '1. Privacy at a Glance',
+                'privacy.general': 'General Information',
+                'privacy.generalText': 'The following information provides a simple overview of what happens to your personal data when you visit this website.',
+                'privacy.dataCollection': 'Data Collection on this Website',
+                'privacy.dataCollectionText': 'Data processing on this website is carried out by the website operator. You can find their contact details in the legal notice.',
+                'privacy.section2': '2. Responsible Party',
+                'privacy.phone': 'Phone',
+                'privacy.section3': '3. Data Collection',
+                'privacy.serverLogs': 'Server Log Files',
+                'privacy.serverLogsText': 'The provider of the pages automatically collects and stores information in server log files.',
+                'privacy.log1': 'Browser type and version',
+                'privacy.log2': 'Operating system used',
+                'privacy.log3': 'Referrer URL',
+                'privacy.log4': 'Hostname of the accessing computer',
+                'privacy.log5': 'Time of the server request',
+                'privacy.log6': 'IP address',
+                'privacy.section4': '4. Cookies',
+                'privacy.cookiesText': 'This website does not use cookies for tracking or analyzing user behavior.',
+                'privacy.section5': '5. Google Maps',
+                'privacy.mapsText': 'This site uses the Google Maps service via an API. To use the functions, it is necessary to store your IP address.',
+                'privacy.section6': '6. Social Media',
+                'privacy.socialMedia': 'Facebook, Instagram, TikTok & WhatsApp',
+                'privacy.socialText': 'Links to our social media profiles are included on this website. When you click on these links, you will be redirected to the respective platforms.',
+                'privacy.section7': '7. Your Rights',
+                'privacy.rightsIntro': 'You have the right at any time to:',
+                'privacy.right1': 'Obtain information about your stored data',
+                'privacy.right2': 'Request correction of inaccurate data',
+                'privacy.right3': 'Request deletion of your data',
+                'privacy.right4': 'Object to the processing',
+                'privacy.section8': '8. Changes to this Privacy Policy',
+                'privacy.changesText': 'We reserve the right to update this privacy policy to comply with current legal requirements.',
+                'privacy.date': 'Last updated: December 2025',
+                'footer.copyright': '© 2025 Maxis Barber Shop. All rights reserved.',
+                'footer.privacy': 'Privacy Policy'
+            }
+        };
+
+        let currentLang = localStorage.getItem('maxis-lang') || 'de';
+
+        function applyTranslations(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+            document.documentElement.lang = lang;
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+            localStorage.setItem('maxis-lang', lang);
+            currentLang = lang;
+        }
+
+        applyTranslations(currentLang);
+
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => applyTranslations(btn.dataset.lang));
+        });
+    </script>
 </body>
 
 </html>
