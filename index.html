@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Maxis Barber Shop - Ihr Premium Friseur und Barbier in München. Beard trim, Hair colouring, Scissor cut und mehr. Besuchen Sie uns in der Gleichmannstraße 2, 81241 München.">
+    <meta name="keywords" content="Barber, Friseur, München, Beard trim, Hair colouring, Scissor cut, Barbershop">
+    <title>Maxis Barber Shop | Premium Barbershop München</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" href="images/logo.jpg">
+</head>
+
+<body>
+    <!-- Floating Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="nav-logo-text">Maxis Barber Shop</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Über Uns</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="tel:08922847455" class="nav-cta">Anrufen</a></li>
+            </ul>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero" id="hero">
+        <!-- Slideshow Background -->
+        <div class="hero-slideshow">
+            <div class="hero-slide active">
+                <img src="images/6.jpg" alt="Maxis Barber Shop">
+            </div>
+            <div class="hero-slide">
+                <img src="images/8.jpg" alt="Maxis Barber Shop">
+            </div>
+            <div class="hero-slide">
+                <img src="images/10.jpg" alt="Maxis Barber Shop">
+            </div>
+            <div class="hero-slide">
+                <img src="images/12.jpg" alt="Maxis Barber Shop">
+            </div>
+            <div class="hero-slide">
+                <img src="images/14.jpg" alt="Maxis Barber Shop">
+            </div>
+        </div>
+
+        <!-- Slideshow Controls -->
+        <div class="slideshow-controls">
+            <div class="slideshow-dot active" data-slide="0"></div>
+            <div class="slideshow-dot" data-slide="1"></div>
+            <div class="slideshow-dot" data-slide="2"></div>
+            <div class="slideshow-dot" data-slide="3"></div>
+            <div class="slideshow-dot" data-slide="4"></div>
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Maxis Barber Shop</h1>
+            <p class="hero-subtitle">Your Style, Our Passion</p>
+            <p class="hero-tagline">Premium Barbershop in München-Pasing</p>
+
+            <!-- Google Reviews Link -->
+            <a href="https://www.google.com/maps/place/Maxis+Barber+Shop/@48.1422,11.4361,17z/data=!4m8!3m7!1s0x0:0x0!8m2!3d48.1422!4d11.4361!9m1!1b1!16s"
+                target="_blank" rel="noopener noreferrer" class="hero-rating">
+                <span class="stars">★★★★☆</span>
+                <span>4.0/5 • 270 Bewertungen auf Google</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+
+            <a href="tel:08922847455" class="hero-cta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+                Jetzt Anrufen
+            </a>
+        </div>
+
+        <div class="hero-scroll">
+            <a href="#about">
+                <span>Mehr Entdecken</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M19 12l-7 7-7-7" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Willkommen</span>
+                <h2 class="section-title">Über Maxis Barber Shop</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <h3>Premium Barbershop in München</h3>
+                    <p>Bei Maxis Barber Shop stehst DU im Mittelpunkt! Wir sind Ihr vertrauenswürdiger Partner für
+                        erstklassige Haarpflege und professionelle Bartpflege in München-Pasing.</p>
+                    <p>Unser erfahrenes Team verbindet traditionelles Handwerk mit modernen Trends, um Ihnen den
+                        perfekten Look zu verleihen. Ob klassischer Haarschnitt, präziser Bartschnitt oder kreative
+                        Farbgestaltung – wir erfüllen Ihre Wünsche mit Leidenschaft und Expertise.</p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            <span>Professionelles Team</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            <span>Premium Produkte</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            <span>Gemütliche Atmosphäre</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            <span>270+ Zufriedene Kunden</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image reveal-right">
+                    <img src="images/1.jpg" alt="Maxis Barber Shop Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Unsere Arbeit</span>
+                <h2 class="section-title">Galerie</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="images/7.jpg" alt="Barbershop Work">
+                    <div class="overlay-border"></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/9.jpg" alt="Barbershop Work">
+                    <div class="overlay-border"></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/11.jpg" alt="Barbershop Work">
+                    <div class="overlay-border"></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/13.jpg" alt="Barbershop Work">
+                    <div class="overlay-border"></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/15.jpg" alt="Barbershop Work">
+                    <div class="overlay-border"></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/16.jpg" alt="Barbershop Work">
+                    <div class="overlay-border"></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/17.jpg" alt="Barbershop Work">
+                    <div class="overlay-border"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Unsere Leistungen</span>
+                <h2 class="section-title">Services</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Hair Services Category -->
+            <div class="service-category reveal">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="6" cy="6" r="3" />
+                            <circle cx="6" cy="18" r="3" />
+                            <line x1="20" y1="4" x2="8.12" y2="15.88" />
+                            <line x1="14.47" y1="14.48" x2="20" y2="20" />
+                            <line x1="8.12" y1="8.12" x2="12" y2="12" />
+                        </svg>
+                    </div>
+                    <h3>Hair Services</h3>
+                </div>
+                <div class="service-list">
+                    <div class="service-item">
+                        <span class="service-name">Haircut</span>
+                        <span class="service-desc">Standard haircuts using clippers and scissors</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Shampoo & Style</span>
+                        <span class="service-desc">Hair washing, cutting, and styling services</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">One Grade All-over</span>
+                        <span class="service-desc">A quick, single-length clipper cut</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Straight Razor Head Shave</span>
+                        <span class="service-desc">Traditional razor shave with warm towel treatments</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Coloring / Dyeing</span>
+                        <span class="service-desc">Professional hair coloring services</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beard & Shaving Services Category -->
+            <div class="service-category reveal">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12" />
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V22l4-4 4 4v-7.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7z" />
+                            <circle cx="9" cy="9" r="1" />
+                            <circle cx="15" cy="9" r="1" />
+                        </svg>
+                    </div>
+                    <h3>Beard & Shaving Services</h3>
+                </div>
+                <div class="service-list">
+                    <div class="service-item">
+                        <span class="service-name">Traditional Classic Shave</span>
+                        <span class="service-desc">Luxurious experience with hot towels, double shave, and icy towel
+                            treatment</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Full Beard Reshaping</span>
+                        <span class="service-desc">Detailed beard shaping with scissors, clippers, razor, oils and
+                            balms</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Quick Beard Trim</span>
+                        <span class="service-desc">Simple, machine-based beard shortening and shaping</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Moustache Trim & Styling</span>
+                        <span class="service-desc">Specialized services for moustache grooming</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Beard Coloring</span>
+                        <span class="service-desc">Professional beard coloring for a fresh look</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Grooming Category -->
+            <div class="service-category reveal">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                        </svg>
+                    </div>
+                    <h3>Additional Grooming & Experience</h3>
+                </div>
+                <div class="service-list">
+                    <div class="service-item">
+                        <span class="service-name">Facial Treatments</span>
+                        <span class="service-desc">Face masks and facial treatments as part of packages</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Complimentary Beverages</span>
+                        <span class="service-desc">Free coffee, beer, or other drinks during your visit</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Premium Products</span>
+                        <span class="service-desc">High-quality grooming products: beard balms, shaving kits, and
+                            more</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Besuchen Sie Uns</span>
+                <h2 class="section-title">Kontakt</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info reveal-left">
+                    <!-- Address -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Adresse</h4>
+                            <p>Gleichmannstraße 2<br>81241 München</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Telefon</h4>
+                            <a href="tel:08922847455">089 22847455</a>
+                        </div>
+                    </div>
+
+                    <!-- Opening Hours -->
+                    <div class="contact-hours">
+                        <h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                            Öffnungszeiten
+                        </h4>
+                        <ul>
+                            <li><span>Montag - Freitag</span><span>09:00 - 19:00</span></li>
+                            <li><span>Samstag</span><span>09:00 - 17:00</span></li>
+                            <li><span>Sonntag</span><span>Geschlossen</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="contact-map reveal-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.8897548821574!2d11.4361!3d48.1422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e760c85d1b8e1%3A0x1234567890123456!2sGleichmannstra%C3%9Fe%202%2C%2081241%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1234567890"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Maxis Barber Shop Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-brand-text">
+                        <h4>Maxis Barber Shop</h4>
+                        <p>Your Style, Our Passion</p>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/profile.php?id=100057335933113" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/maxis_barbershop/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com/@maxis_barbershop" target="_blank" rel="noopener noreferrer"
+                        aria-label="TikTok" title="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                        </svg>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/498922847455" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                        title="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- Google Reviews -->
+                    <a href="https://www.google.com/maps/place/Maxis+Barber+Shop/@48.1422,11.4361,17z/data=!4m8!3m7!1s0x0:0x0!8m2!3d48.1422!4d11.4361!9m1!1b1!16s"
+                        target="_blank" rel="noopener noreferrer" aria-label="Google Reviews" title="Google Reviews">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Maxis Barber Shop. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="impressum.html">Impressum</a>
+                    <span class="footer-divider">|</span>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // ===== HERO SLIDESHOW =====
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.slideshow-dot');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                dots[i].classList.remove('active');
+            });
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            const next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+        }
+
+        function startSlideshow() {
+            slideInterval = setInterval(nextSlide, 4000);
+        }
+
+        // Dot click handlers
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                clearInterval(slideInterval);
+                showSlide(index);
+                startSlideshow();
+            });
+        });
+
+        // Start slideshow
+        startSlideshow();
+
+        // ===== NAVIGATION SCROLL EFFECT =====
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // ===== MOBILE MENU TOGGLE =====
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ===== SCROLL REVEAL ANIMATIONS =====
+        const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // ===== PARALLAX EFFECT FOR PARTICLES =====
+        const particles = document.querySelectorAll('.particle');
+        particles.forEach((particle, i) => {
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 20 + 's';
+            particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+        });
+    </script>
+</body>
+
+</html>
